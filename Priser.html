@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+
+ <header></header>
+
+  <body>
+   
+
+<div class="text-center w-100  img-fluid">
+  <img src="https://static.euroflorist.com/img/scale/1700/1700/magnolia/jcr:d3037f6f-c473-4a10-b43e-2a0043274da8/Desktop%20Valentines%202160x750.jpg" class="w-100" alt="..."  >
+
+  </div>
+
+
+    <main>
+
+      <div class="d-flex justify-content-start">
+        
+      
+     <table class="table align-items-center  table-danger  w-25">
+  <thead>
+    <tr>
+      <th scope="col">Antal rosor</th>
+      <th scope="col">Priser</th>
+      
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">10</th>
+      <td>200</td>
+     
+      
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>400</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">30</th>
+      <td>600</td>
+     
+     
+    </tr>
+  </body>
+</table>
+
+
+
+
+
+ 
+<p class="text-center fst-italic"> Saker som måste bockas av innan du väljer din typ av bukett</p>
+
+    <div id="successAlert" class="alert text-center d-none mt-3" role="alert">
+  Perfekt! Då är du helt redo till att besttälla din bukett
+  <a href="series.html" class="alert-link">klicka här</a>
+  och börja beställa din bukett!
+</div>
+
+
+<ul class="list-group align-items-center">
+  <li class="list-group-item">
+    <input class="form-check-input me-1 " type="checkbox" value="" id="firstCheckbox">
+    <label class="form-check-label text-danger" for="firstCheckbox">Färg</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+    <label class="form-check-label text-danger" for="secondCheckbox">Storlek</label>
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+    <label class="form-check-label text-danger" for="thirdCheckbox">Tillägg</label>
+  </li>
+</ul>
+
+</div>
+
+    </main>
+    <footer>
+      <div class="card text-center">
+  
+  <div class="card-body ">
+    <figure>
+      <blockquote class="blockquote">
+        <p>Roses for every special moment</p>
+      </blockquote>
+      <figcaption class="blockquote-footer ">
+        Someone famous in <cite title="Source Title">Bouquettis</cite>
+      </figcaption>
+    </figure>
+  </div>
+    </footer>
+
+    </body>
+
+    <script src="init.js"></script>
+    
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const checkboxes = document.querySelectorAll(".form-check-input");
+    const alertBox = document.getElementById("successAlert");
+
+    checkboxes.forEach(function (box) {
+      box.addEventListener("change", function () {
+
+        const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+
+        if (allChecked) {
+          alertBox.classList.remove("d-none");
+        } else {
+          alertBox.classList.add("d-none");
+        }
+
+      });
+    });
+
+  });
+</script>
+<style>
+  #successAlert {
+    background-color: pink;
+    border-color: hotpink;
+    color: black;
+  }
+</style>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+</html>
