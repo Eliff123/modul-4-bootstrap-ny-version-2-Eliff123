@@ -22,3 +22,24 @@
 
     </nav>
 `;
+
+document.getElementsByTagName( "footer")[0].innerHTML = `
+
+    <div class="card text-center">
+
+      <div class="card-body ">
+        <figure>
+          <blockquote class="blockquote">
+            <p>Roses for every special moment</p>
+          </blockquote>
+          <figcaption class="blockquote-footer ">
+            Someone famous in <cite title="Source Title">Bouquettis</cite>
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+
+`;
+
